@@ -9,7 +9,11 @@ import {
   RiImage2Line,
   RiEmotionHappyLine,
   RiSendPlane2Line,
-  RiMore2Fill
+  RiMore2Fill,
+  RiInstagramLine,
+  RiFacebookBoxLine,
+  RiTwitterLine,
+  RiTwitchLine,
 } from 'react-icons/ri';
 
 import {
@@ -271,17 +275,17 @@ function App() {
               <div className="flex items-start">
                 <img
                   src="https://img.freepik.com/free-photo/portrait-beautiful-young-woman-standing-gray-wall_231208-10760.jpg"
-                  alt="otra imagen del toño desnudo" 
+                  alt="otra imagen del toño desnudo"
                   className="w-8 h-8 object-cover rounded-full"
                 />
                 <img
                   src="https://img.freepik.com/free-photo/portrait-beautiful-young-woman-standing-gray-wall_231208-10760.jpg"
-                  alt="otra imagen del toño desnudo" 
+                  alt="otra imagen del toño desnudo"
                   className="w-8 h-8 object-cover rounded-full"
                 />
                 <img
                   src="https://img.freepik.com/free-photo/portrait-beautiful-young-woman-standing-gray-wall_231208-10760.jpg"
-                  alt="otra imagen del toño desnudo" 
+                  alt="otra imagen del toño desnudo"
                   className="w-8 h-8 object-cover rounded-full"
                 />
               </div>
@@ -289,11 +293,11 @@ function App() {
           </div>
           <div className="absolute bg-[#22222A] left-0 bottom-0 w-full p-8">
             <form className="relative" action="">
-              <div className='absolute right-4 top-[18px] flex items-center gap-2 text-gray-300'>
+              <div className="absolute right-4 top-[18px] flex items-center gap-2 text-gray-300">
                 <RiImage2Line className="hover:cursor-pointer text-gray-500" />
-                <RiEmotionHappyLine className="hover:cursor-pointer text-gray-500"/>
-                <RiSendPlane2Line className="hover:cursor-pointer text-gray-500"/>
-                <BiMap className="hover:cursor-pointer text-gray-500 text-xl"/>
+                <RiEmotionHappyLine className="hover:cursor-pointer text-gray-500" />
+                <RiSendPlane2Line className="hover:cursor-pointer text-gray-500" />
+                <BiMap className="hover:cursor-pointer text-gray-500 text-xl" />
               </div>
               <BiMicrophone className="absolute left-4 text-gray-500 top-[18px] text-xl" />
               <input
@@ -304,7 +308,7 @@ function App() {
             </form>
           </div>
           {/* Content Message */}
-          
+
           <div className="mt-32 overflow-y-auto h-[calc(100% -60px)]">
             <div className="flex gap-4">
               <img
@@ -313,14 +317,16 @@ function App() {
                 className="w-10 h-10 object-cover rounded-full"
               />
               <div>
-                <h4 className="text-gray-300 font-semibold mb-2"> killan jens
+                <h4 className="text-gray-300 font-semibold mb-2">
+                  {' '}
+                  killan jens
                   <span className="text-gray-500 font-normal text-sm ml-8">10:12 AM</span>
                 </h4>
                 <div className="flex items-center gap-2 mb-2">
                   <p className="bg-[#292A30] py-2 px-4 rounded-tr-lg rounded-br-lg rounded-bl-lg text-gray-500">
                     el rober se la come, una pizza :=D
                   </p>
-                  <button className="text-gray-500">
+                  <button type="button" className="text-gray-500">
                     <RiMore2Fill />
                   </button>
                 </div>
@@ -328,7 +334,7 @@ function App() {
                   <p className="bg-[#292A30] py-2 px-4 rounded-tr-lg rounded-br-lg rounded-bl-lg text-gray-500">
                     Se Sabe
                   </p>
-                  <button className="text-gray-500">
+                  <button type="button" className="text-gray-500">
                     <RiMore2Fill />
                   </button>
                 </div>
@@ -337,7 +343,7 @@ function App() {
             {/* Divider */}
             <div className="my-8 relative">
               <p className="text-sm text-center bg-[#1E1F24] py-1 px-4 absolute -top-[14px] ml-[50%] -translate-x-[50%] rounded-br-lg text-gray-500">Today, March 24</p>
-              <hr className="border-gray-600"/>
+              <hr className="border-gray-600" />
             </div>
 
             <div className="flex justify-end gap-4">
@@ -355,7 +361,7 @@ function App() {
                   <p className="bg-purple-600 py-2 px-4 rounded-tl-lg rounded-bl-lg rounded-br-lg text-white order-1">
                     el rober se la come, una pizza :=D
                   </p>
-                  <button className="text-gray-500">
+                  <button type="button" className="text-gray-500">
                     <RiMore2Fill />
                   </button>
                 </div>
@@ -363,7 +369,46 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="bg-red-700 col-span-2">El Sr. Orozco se la come entera</section>
+        <section className="bg-red-700 col-span-2">
+          {/* Image */}
+          <div className="flex flex-col items-center justify-center gap-2 text-center my-10 bg-red-300">
+            <img
+              src="https://img.freepik.com/free-photo/portrait-beautiful-young"
+              className="w-20 h-20 object-cover rounded-full"
+              alt="me-lavando"
+            />
+            <div>
+              <h2 className="text-gray-300 text-xl">Hi brow!</h2>
+              <p className="text-gray-500" />
+            </div>
+            {/* Attachmendts */}
+            <div className="p-8">
+              {/* icon */}
+              <div className="flex items-center gap-4">
+                <div className="bg-[#1E1F24] p-4 text-xl rounded-lg text-purple-600">
+                  <RiInstagramLine className="" />
+                  <p>150,000 Followers</p>
+                </div>
+                <div className="bg-[#1E1F24] p-4 text-xl rounded-lg text-purple-600">
+                  <RiFacebookBoxLine className="" />
+                  <p>150,000 Followers</p>
+                </div>
+                <div className="bg-[#1E1F24] p-4 text-xl rounded-lg text-purple-600">
+                  <RiTwitterLine className="" />
+                  <p>150,000 Followers</p>
+                </div>
+                <div className="bg-[#1E1F24] p-4 text-xl rounded-lg text-purple-600">
+                  <RiInstagramLine className="" />
+                  <p>150,000 Followers</p>
+                </div>
+                <div className="bg-[#1E1F24] p-4 text-xl rounded-lg text-purple-600">
+                  <RiTwitchLine className="" />
+                  <p>150,000 Followers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
